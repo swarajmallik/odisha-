@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+    
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) url('../img/bg.jpg')no-repeat cover center center ;
+
+}
+
+body{
+    background: url('../img/bg5.jpg') no-repeat  center center;
+    background-attachment: fixed;
+
+}
+
+
+nav{
+    width: 100%;
+    height: 15vh ;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    text-transform: uppercase;
+    /* position: fixed;
+    z-index: 5;
+    margin: -22px 0px; */
+}
+
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color: #00b894;
+   
+    
+}
+
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+section h3{
+font-size: 35px;
+font-weight: 200;
+letter-spacing: 3px;
+text-shadow: 1px 1px 2px;
+}
+
+section h1{
+
+margin: 30px 0 20px 0;
+font-size: 55px;
+font-weight: 700;
+text-shadow: 2px 1px 5px black;
+text-transform: uppercase;
+
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section h1 span{
+    color: #00b894;
+}
+
+.btn{
+    background-color: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn2{
+    background-color: #00b894;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* .btn:hover{
+    background-color:#00b894;
+    border: 2px solid white;
+}
+
+.btn2:hover{
+    background-color :white;
+    border: 2px solid white;
+    color: black;
+} */
+.span1{
+    color: #00b894;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+.change_content::after{
+content: "";
+animation: changetext 10s infinite linear;
+
+}
+@keyframes changetext {
+    0% {
+      content: "Jagannath Temple";
+    }
+    20% {
+      content: "Dhauli Giri Hills";
+    }
+    35% {
+      content: "Puri Beach";
+    }
+    60% {
+      content: "Hirakund dam";
+    }
+    80% {
+      content: "Daring Badi";
+    }
+    100% {
+      content: "Udayagiri caves";
+    }
+  }
+
+  @media  screen and (max-width:900px) {
+    
+
+    body{
+        background: url('../img/bg5.jpg') no-repeat center center;
+    }
+ 
+  
+
+  nav .menu{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+}
